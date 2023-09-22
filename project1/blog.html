@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/809ee8565b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo of the university" /></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-xmark"
+                onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1>BLOG</h1>
+    </section>
+
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./images/certificate.jpg" alt="">
+                <h2>Certificates & online Programs </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae accusamus magni ex dignissimos nesciunt, ullam perspiciatis voluptatum saepe praesentium inventore sint, molestiae excepturi exercitationem. Ducimus officia porro quas. Mollitia vitae incidunt temporibus, at necessitatibus sequi. Provident similique asperiores neque, ex pariatur atque, exercitationem assumenda numquam perferendis autem molestias! Totam quo ducimus similique ad sed quas corrupti quod nam laudantium quasi, in excepturi aliquid reprehenderit nemo nobis, reiciendis eaque explicabo quam minima. Facere nam, quae dolores esse repellendus magnam non modi!</p>
+                <br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique rem nesciunt unde tempora error dolorem quae omnis distinctio nemo vel voluptatem, laudantium et? Vel, molestias quidem minus asperiores excepturi recusandae enim sapiente deserunt quo ullam quisquam quis? Explicabo consequuntur dignissimos nostrum cupiditate aliquid, voluptate deleniti ad architecto nobis hic quibusdam velit praesentium, modi nulla porro! Nesciunt velit hic officia veritatis a, deserunt eos aperiam voluptas? Voluptates sapiente ipsam, tempora alias fugiat placeat sint consectetur voluptas eligendi maiores ratione eum nostrum?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptas voluptate asperiores obcaecati enim laudantium, omnis aut? Totam magni pariatur voluptates laborum corporis temporibus reiciendis distinctio! Cupiditate labore corporis exercitationem consequuntur incidunt aliquid id eveniet ipsa alias et, quis, magnam ut dolorem odio sapiente iure rerum accusantium quo sint similique accusamus recusandae amet quaerat quas! Maxime, magnam blanditiis. Expedita cum eum sapiente tempora voluptatem, quos esse quidem similique consequuntur praesentium?</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea delectus iusto illum, molestiae nisi commodi facere laudantium, dignissimos tempora ut magnam? Assumenda ipsum, fugiat maiores, fuga in, ab culpa consequuntur architecto aliquid nobis facilis! Enim expedita, corrupti minus culpa, dignissimos maxime obcaecati nisi aperiam ipsam accusantium quasi est at, ad voluptatibus! Ipsam, ea officiis facilis quae amet dolor hic repellendus quibusdam cumque expedita, excepturi quos eum sequi nemo? Eos adipisci vitae accusantium similique voluptatem. Tempora commodi deleniti adipisci obcaecati quo.</p>
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                    </form>
+                </div>
+            </div>
+            <div class="blog-right">
+                <h3>Categories</h3>
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Commputer Science</span>
+                    <span>24</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>22</span>
+                </div>
+                <div>
+                    <span>Information Science</span>
+                    <span>25</span>
+                </div>
+                <div>
+                    <span>Electronic</span>
+                    <span>20</span>
+                </div>
+                <div>
+                    <span>Communication</span>
+                    <span>27</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fotter -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis nobis sint aliquam vero, tempora atque.</p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> by Palak</p>
+    </section>
+    <!-- javascript for menu on the top right corner -->
+
+    <script>
+        var navlinks = document.getElementById("navlinks");
+        function showmenu(){
+            navlinks.style.right = "0";
+        }
+        function hidemenu(){
+            navlinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
